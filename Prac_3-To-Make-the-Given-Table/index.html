@@ -3,7 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Table</title>
+    <style>
+      table,
+      td {
+        border: 2px solid black;
+      }
+      div {
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 20%;
+      }
+      .A {
+        /* padding: 0px 10px 0px 26px; */
+        text-align: center;
+      }
+      .B {
+        /* padding: 0px 20px 0px 30px; */
+        text-align: center;
+      }
+      .C {
+        /* padding: 0px 10px 0px 10px; */
+        text-align: center;
+      }
+      .D {
+        /* padding: 0px 10px 0px 10px; */
+        text-align: center;
+      }
+      .E {
+        text-align: center;
+      }
+      .J {
+        /* padding-top: 0px; */
+        text-align: center;
+      }
+      .K {
+        text-align: center;
+      }
+      .M {
+        text-align: center;
+      }
+      .N {
+        text-align: center;
+      }
+      .L {
+        text-align: center;
+      }
+      .P {
+        text-align: center;
+      }
+      .O {
+        text-align: center;
+      }
+      .I {
+        text-align: center;
+      }
+      .H2 {
+        text-align: center;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div>
+      <table width="100%">
+        <!-- First Row -->
+        <tr>
+          <td colspan="2" class="A">A</td>
+          <td colspan="5" class="B">B</td>
+        </tr>
+        <!-- Second row -->
+        <tr>
+          <td class="C">C</td>
+          <td class="D">D</td>
+          <td class="F">F</td>
+          <td class="E">E</td>
+          <td class="G">G</td>
+          <td class="H">H</td>
+          <td class="J" rowspan="3">J</td>
+        </tr>
+        <!-- Third row -->
+        <tr>
+          <td class="K" rowspan="2">K</td>
+          <td class="M">M</td>
+          <td class="N" colspan="2">N</td>
+          <td class="I" colspan="2">I</td>
+        </tr>
+        <!-- Fourth row -->
+        <tr>
+          <td class="L">L</td>
+          <td class="P">P</td>
+          <td class="O">O</td>
+          <td class="I">I</td>
+          <td class="H2">H</td>
+        </tr>
+      </table>
+    </div>
+  </body>
 </html>
