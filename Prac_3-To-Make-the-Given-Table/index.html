@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Table</title>
-    <style>
+    <!-- <style>
       table,
       td {
         border: 2px solid black;
       }
-      div {
+      /* div {
         width: 50%;
         margin-left: 25%;
-        margin-top: 20%;
+        margin-top: 20%; */
       }
       .A {
         /* padding: 0px 10px 0px 26px; */
@@ -62,42 +62,40 @@
       .H2 {
         text-align: center;
       }
-    </style>
+    </style>  -->
   </head>
   <body>
-    <div>
-      <table width="100%">
+      <table align="center"width="50%" border="1">
         <!-- First Row -->
         <tr>
-          <td colspan="2" class="A">A</td>
-          <td colspan="5" class="B">B</td>
+          <td colspan="2" class="A" align="center">A</td>
+          <td colspan="5" class="B" align="center">B</td>
         </tr>
         <!-- Second row -->
         <tr>
-          <td class="C">C</td>
-          <td class="D">D</td>
+          <td class="C" align="center">C</td>
+          <td class="D" align="center">D</td>
           <td class="F">F</td>
-          <td class="E">E</td>
+          <td class="E" align="center">E</td>
           <td class="G">G</td>
           <td class="H">H</td>
-          <td class="J" rowspan="3">J</td>
+          <td class="J" rowspan="3" align="center" valign="top">J</td>
         </tr>
         <!-- Third row -->
         <tr>
-          <td class="K" rowspan="2">K</td>
-          <td class="M">M</td>
-          <td class="N" colspan="2">N</td>
+          <td class="K" rowspan="2" align="center" valign="top">K</td>
+          <td class="M" align="center">M</td>
+          <td class="N" colspan="2" align="center">N</td>
           <td class="I" colspan="2">I</td>
         </tr>
         <!-- Fourth row -->
         <tr>
-          <td class="L">L</td>
-          <td class="P">P</td>
-          <td class="O">O</td>
-          <td class="I">I</td>
-          <td class="H2">H</td>
+          <td class="L" align="center">L</td>
+          <td class="P" align="center">P</td>
+          <td class="O" align="center">O</td>
+          <td class="I2" align="center">I</td>
+          <td class="H2" align="center">H</td>
         </tr>
       </table>
-    </div>
   </body>
 </html>
