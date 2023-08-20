@@ -16,6 +16,7 @@
           id="fname"
           name="First Name"
           placeholder="First Name"
+          required
         />
 
         <br />
@@ -63,14 +64,10 @@
         <br />
         <br />
         <!-- Gender Section -->
-        <label for="gender">Gender: *</label>
-        <p>
-          Male :<input type="radio" id="gender" name="Gender" /> Female:<input
-            type="radio"
-            id="gender"
-            name="Gender"
-          />
-        </p>
+        <label for="gender">Gender: *</label><br />
+        Male :<input type="radio" id="gender" name="Gender" />
+        Female:
+        <input type="radio" id="gender" name="Gender" />
 
         <br />
         <br />
@@ -113,7 +110,7 @@
         <!-- Joining Date -->
         <label for="Joining_date">Joining Date: *</label><br />
         <input
-          type="datetime"
+          type="date"
           id="Joining_date"
           placeholder="E.g. :- 03/09/2023"
           required
@@ -131,12 +128,7 @@
         />
 
         <label for="Reset_Button"></label>
-        <input
-          type="reset"
-          id="Reset_Button"
-          required
-          style="margin-left: 50%"
-        />
+        <input type="reset" id="Reset_Button" style="margin-left: 50%" />
       </form>
     </div>
   </body>
