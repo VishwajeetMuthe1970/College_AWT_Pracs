@@ -1,103 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Form</title>
-</head>
-<body>  <div style="background-color: antiquewhite;padding: 20px;margin:25%;bottom: 50%;">
-        <center>
-            <form id="form">
-                <h1 id="Heading">Register With Us!</h1>
-                <!-- First Name Section -->
-                <label for="fname">First Name:  *</label>
-                <input type="text" id="fname" name="First Name"  placeholder="First Name">
+  </head>
+  <body>
+    <div style="padding: 20px; margin-left: 40%; display: inline-flex">
+      <form id="form" style="border: 2px solid black; padding: 10px">
+        <h1 id="Heading">Register With Us!</h1>
+        <!-- First Name Section -->
+        <label for="fname">First Name: *</label><br />
+        <input
+          type="text"
+          id="fname"
+          name="First Name"
+          placeholder="First Name"
+        />
 
-                <br>
-                <br>
-                <!-- Last Name Section -->
-                <label for="Last_Name">Last Name:  *</label>
-                <input type="text" id="Last_Name" name="Last_Name" placeholder="Last Name" required>
+        <br />
+        <br />
+        <!-- Last Name Section -->
+        <label for="Last_Name">Last Name: *</label><br />
+        <input
+          type="text"
+          id="Last_Name"
+          name="Last_Name"
+          placeholder="Last Name"
+          required
+        />
 
-                <br>
-                <br>
-                <!-- Mobile -->
-                <label for="Mobile">Mobile No.:  *</label>
-                <input type="text" pattern="\d{10}" id="Mobile" placeholder="10-digit Number" required>
+        <br />
+        <br />
+        <!-- Mobile -->
+        <label for="Mobile">Mobile No.: *</label><br />
+        <input
+          type="text"
+          pattern="\d{10}"
+          id="Mobile"
+          placeholder="10-digit Number"
+          required
+        />
 
-                <br>
-                <br>
-                <!-- E-mail Section -->
-                <label for="E-mail">E-mail: *</label>
-                <input type="email" id="E-mail" placeholder="E-mail" required>
+        <br />
+        <br />
+        <!-- E-mail Section -->
+        <label for="E-mail">E-mail: *</label><br />
+        <input type="email" id="E-mail" placeholder="E-mail" required />
 
-                <br>
-                <br>
-                <!-- Password Section -->
-                <label for="pass">Password: *</label>
-                <input type="password" id="pass" placeholder="Password" required>
+        <br />
+        <br />
+        <!-- Password Section -->
+        <label for="pass">Password: *</label><br />
+        <input type="password" id="pass" placeholder="Password" required />
 
+        <br />
+        <br />
+        <!-- Age Section-->
+        <label for="Age">Age: *</label><br />
+        <input type="number" id="Age" min="18" max="40" required />
 
-                <br>
-                <br>
-                <!-- Age Section-->
-                <label for="Age">Age: *</label><br>
-                <input type="number" id="Age" min="18" max="40" required>
+        <br />
+        <br />
+        <!-- Gender Section -->
+        <label for="gender">Gender: *</label>
+        <p>
+          Male :<input type="radio" id="gender" name="Gender" /> Female:<input
+            type="radio"
+            id="gender"
+            name="Gender"
+          />
+        </p>
 
-                <br>
-                <br>
-                <!-- Gender Section -->
-                <label for="gender">Gender: *</label>
-                <p>Male :<input type="radio" id="gender" name="Gender">
-                Female:<input type="radio" id="gender" name="Gender"></p>
+        <br />
+        <br />
+        <!-- Address -->
+        <label for="addr">Address: </label><br />
+        <textarea
+          rows="10"
+          cols="30"
+          maxlength="255"
+          id="addr"
+          placeholder="Maximum length of characters supported is 255"
+        ></textarea>
 
-                <br>
-                <br>
-                <!-- Address -->
-                <label for="addr">Address: </label><br>
-                <textarea rows="10" cols="30" maxlength="255" id="addr"></textarea>
+        <br />
+        <br />
+        <!-- city Section -->
+        <label for="city">City: </label>
+        <select id="city">
+          <option value="Ahmedabad">Ahmedabad</option>
+          <option value="Surat">Surat</option>
+          <option value="Rajkot">Rajkot</option>
+          <option value="Mummbai">Mummbai</option>
+          <option value="Warli">Warli</option>
+        </select>
 
-                <br>
-                <br>
-                <!-- city Section -->
-                <label for="city">City: </label>
-                <select  id="city">
-                <option value="Ahmedabad">Ahmedabad</option>
-                <option value="Surat">Surat</option>
-                <option value="Rajkot">Rajkot</option>
-                <option value="Mummbai">Mummbai</option>
-                <option value="Warli">Warli</option>
-                </select>
-                
-                <br>
-                <br>
-                <!-- Pincode -->
-                <label for="Pincode">Pincode:  *</label>
-                <input type="text" pattern="\d{6}" id="Pincode"  required>
+        <br />
+        <br />
+        <!-- Pincode -->
+        <label for="Pincode">Pincode: *</label><br />
+        <input
+          type="text"
+          pattern="\d{6}"
+          id="Pincode"
+          placeholder="E.g. :- 300524 "
+          required
+        />
 
-                <br>
-                <br>
-                <!-- Joining Date -->
-                <label for="Joining_date">Joining Date: *</label>
-                <input type="datetime" id="Joining_date" required>
+        <br />
+        <br />
+        <!-- Joining Date -->
+        <label for="Joining_date">Joining Date: *</label><br />
+        <input
+          type="datetime"
+          id="Joining_date"
+          placeholder="E.g. :- 03/09/2023"
+          required
+        />
 
-                <br>
-                <br>
-                <!-- Button Section -->
-                <label for="Submit_Button"></label>
-                <input type="submit" id="Submit_Button" required>
+        <br />
+        <br />
+        <!-- Button Section -->
+        <label for="Submit_Button"></label>
+        <input
+          type="submit"
+          id="Submit_Button"
+          value="submit"
+          style="margin: 5px 0px 0px 10px"
+        />
 
-                <label for="Reset_Button"></label>
-                <input type="reset" id="Reset_Button" required>
-                
-
-                
-
-
-
-            </form>
-          </center>  
-        </div>
-</body>
-
+        <label for="Reset_Button"></label>
+        <input
+          type="reset"
+          id="Reset_Button"
+          required
+          style="margin-left: 50%"
+        />
+      </form>
+    </div>
+  </body>
 </html>
