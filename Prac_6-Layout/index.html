@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Layout Demonstration</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
 
     <style>
       /* Navbar */
@@ -66,6 +70,11 @@
         height: 100%;
         width: 100%;
       }
+      #left > h1 {
+        font-family: "Sofia", sans-serif;
+        font-weight: bolder;
+        font-size: xx-large;
+      }
       #paint_job_Logo {
         height: 200px;
         width: 200px;
@@ -78,11 +87,33 @@
         height: 100%;
         width: 100%;
       }
+      #center > h1 {
+        font-family: "Sofia", sans-serif;
+        font-weight: bolder;
+        font-size: xx-large;
+      }
+      #body_build_Logo {
+        height: 200px;
+        width: 200px;
+        padding-left: 200px;
+        padding-top: 45px;
+      }
       #right {
         border: 5px solid whitesmoke;
         align: right;
         height: 100%;
         width: 100%;
+      }
+      #right > h1 {
+        font-family: "Sofia", sans-serif;
+        font-weight: bolder;
+        font-size: xx-large;
+      }
+      #Full_body_Logo {
+        height: 200px;
+        width: 200px;
+        padding-left: 200px;
+        padding-top: 45px;
       }
       #Footer {
         margin-top: 10px;
@@ -140,8 +171,24 @@
               alt="paint_job_Logo"
           /></a>
         </div>
-        <div id="center">Main</div>
-        <div id="right">Right</div>
+        <div id="center">
+          <h1 style="padding-left: 200px">Body Building</h1>
+          <a href="#"
+            ><img
+              id="body_build_Logo"
+              src="./Body_Build.jpg"
+              alt="Body_build_Logo"
+          /></a>
+        </div>
+        <div id="right">
+          <h1 style="padding-left: 200px">Full Restoration</h1>
+          <a href="#"
+            ><img
+              id="Full_body_Logo"
+              src="./Full_Restoration.jpeg"
+              alt="Full_body_Logo"
+          /></a>
+        </div>
       </div>
 
       <!--Footer Portion  -->
