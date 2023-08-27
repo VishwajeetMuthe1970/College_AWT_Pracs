@@ -6,6 +6,7 @@
     <title>Layout Demonstration</title>
 
     <style>
+      /* Navbar */
       a {
         text-decoration: none; /* to get rid of underline*/
         color: #fff;
@@ -13,21 +14,37 @@
       #navbar a:hover {
         border-bottom: 2px #fff solid;
       }
+      #nav_links {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        margin-left: 70%;
+        padding-top: 5px;
+      }
 
       #logo {
         height: 100px;
         width: 100px;
-        display: inline-block;
+        display: inline;
       }
       #navbar {
         background-color: gray;
         box-sizing: border-box;
         width: 100%;
       }
+
+      /* Banner */
       #Banner {
         width: 100%;
+        height: 200px;
         margin-top: 10px;
       }
+      #background-video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
       #banner_image {
         width: 100%;
         height: 250px;
@@ -68,47 +85,55 @@
     </style>
   </head>
   <body>
-    <!-- Navbar -->
-    <div class="head" style="border: 5px solid whitesmoke; display: flex">
-      <img id="logo" src="./Logo.webp" alt="Logo" />
-      <div id="navbar">
-        <ul
-          id="nav_links"
-          style="
-            list-style: none;
-            display: flex;
-            gap: 30px;
-            margin-left: 70%;
-            padding-top: 5px;
-          "
-        >
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Explore Content</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+    <div>
+      <!-- Navbar -->
+      <div class="head" style="border: 5px solid whitesmoke; display: flex">
+        <img id="logo" src="./Logo.webp" alt="Logo" />
+        <div id="navbar">
+          <ul id="nav_links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Explore Content</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <!-- Banner -->
-    <div id="Banner">
-      <img id="banner_image" src="./Banner.jfif" alt="Banner" />
-    </div>
 
-    <!-- Center Portion -->
-    <div
-      id="Center_container"
-      style="
-        background-color: gainsboro;
-        border: 5px solid black;
-        display: flex;
-      "
-    >
-      <div id="left">Left</div>
-      <div id="center">Main</div>
-      <div id="right">Right</div>
-    </div>
+      <!-- Banner -->
+      <div id="Banner">
+        <!-- <marquee behavior="banner_image" direction="left" scrollamount="35"
+          ><img id="banner_image" src="./Banner.jfif" alt="Banner"
+        /></marquee> -->
+        <video
+          id="background-video"
+          autoplay
+          loop
+          muted
+          poster="https://assets.codepen.io/6093409/river.jpg"
+        >
+          <source
+            src="https://assets.codepen.io/6093409/river.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
 
-    <!--Footer Portion  -->
-    <div id="Footer">Footer</div>
+      <!-- Center Portion -->
+      <div
+        id="Center_container"
+        style="
+          background-color: gainsboro;
+          border: 5px solid black;
+          display: flex;
+        "
+      >
+        <div id="left">Left</div>
+        <div id="center">Main</div>
+        <div id="right">Right</div>
+      </div>
+
+      <!--Footer Portion  -->
+      <div id="Footer">Footer</div>
+    </div>
   </body>
 </html>
