@@ -1,58 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Layout Demonstration</title>
 
     <style>
-        a {
-            text-decoration: none; /* to get rid of underline*/
-            color: #fff;
-         }   
-         #navbar a:hover{
-            border-bottom: 2px #fff solid;
-         }
+      a {
+        text-decoration: none; /* to get rid of underline*/
+        color: #fff;
+      }
+      #navbar a:hover {
+        border-bottom: 2px #fff solid;
+      }
 
-         #logo{
-            height: 100px;
-            width: 100px;
-            display: inline-block;
-         }
-         #navbar{
-            background-color:gray;
-            box-sizing: border-box;
-            width: 100%;
-         }
-         #Banner{
-            width: 100%;
-            margin-top: 10px;
-         }
-         #banner_image{
-            width: 100%;
-            height: 250px;
-         }
-
+      #logo {
+        height: 100px;
+        width: 100px;
+        display: inline-block;
+      }
+      #navbar {
+        background-color: gray;
+        box-sizing: border-box;
+        width: 100%;
+      }
+      #Banner {
+        width: 100%;
+        margin-top: 10px;
+      }
+      #banner_image {
+        width: 100%;
+        height: 250px;
+      }
+      #Center_container {
+        margin-top: 10px;
+        height: 350px;
+        width: 100%;
+        gap: 3px;
+      }
+      #left {
+        border: 5px solid black;
+        align-self: left;
+        height: 100%;
+        width: 100%;
+      }
+      #center {
+        border: 5px solid black;
+        align: center;
+        height: 100%;
+        width: 100%;
+      }
+      #right {
+        border: 5px solid black;
+        align: right;
+        height: 100%;
+        width: 100%;
+      }
+      #Footer {
+        margin-top: 10px;
+        box-sizing: border-box;
+        background-color: gainsboro;
+        border: 5px solid black;
+        display: flex;
+        width: 100%;
+        height: 10rem;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navbar -->
-    <div class="head" style="border:5px solid whitesmoke; display: flex;" >
-        <img id="logo" src="./Logo.webp" alt="Logo">
-        <div id="navbar">
-            <ul id="nav_links" style="list-style: none;display: flex; gap: 30px; margin-left: 70%; padding-top: 5px;">
-                <li><a href="#">Home</a></li>  
-                <li><a href="#">Explore Content</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
+    <div class="head" style="border: 5px solid whitesmoke; display: flex">
+      <img id="logo" src="./Logo.webp" alt="Logo" />
+      <div id="navbar">
+        <ul
+          id="nav_links"
+          style="
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin-left: 70%;
+            padding-top: 5px;
+          "
+        >
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Explore Content</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
     </div>
     <!-- Banner -->
     <div id="Banner">
-        <img id="banner_image" src="./Banner.jfif" alt="Banner">
-
+      <img id="banner_image" src="./Banner.jfif" alt="Banner" />
     </div>
-    
-</body>
+
+    <!-- Center Portion -->
+    <div
+      id="Center_container"
+      style="
+        background-color: gainsboro;
+        border: 5px solid black;
+        display: flex;
+      "
+    >
+      <div id="left">Left</div>
+      <div id="center">Main</div>
+      <div id="right">Right</div>
+    </div>
+
+    <!--Footer Portion  -->
+    <div id="Footer">Footer</div>
+  </body>
 </html>
