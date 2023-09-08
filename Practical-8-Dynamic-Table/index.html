@@ -3,41 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Table</title>
+    <title>Document</title>
 </head>
 <body>
-    <div>
-        <label for="row">
-            Rows:
-        </label><br />
-        <input type="text" id="row">
-        <br />
-        <label` for="cols">
-            cols: 
-        </label><br />
-        <input type="text" id="cols">
-        <br />
-        <br />
-        <input type="button" id="btn" value="Create Table">
-
-        <script>
-            var cols= document.getElementById("cols");
-            var rows = document.getElementById("row");
-            var btn1 = document.getElementById("btn")
-
-            btn1.addEventListner("click", ()=>{
-                document.write("<table border='2' width='600px'>");
-                    
-                    for(i=0; i< rows.value; i++){
-                        document.write("<tr> </tr>");
-                        for(j=0; j<cols.value; j++){
-                            document.write("<td> </td>");
-                        }
-                    }
-                document.write("</table>")
-            })
-             
-        </script>
-    </div>
+   Rows<input type="text" id="rows"><br>
+   Columns<input type="text" id="columns"><br>
+   <input type="button" value="create_table" id="btn1">
+   <script>
+     var cols = document.getElementById("columns");
+     var rows = document.getElementById("rows");
+     var btn1 = document.getElementById("btn1");
+     btn1.addEventListener("click", () => {
+        document.write("<table border='2' width='600px' height='300px'>");
+            for (var i = 0; i<rows.value; i++)
+            {
+                document.write("<tr></tr>");
+                for(var j =0; j<cols.value; j++ )
+                {
+                    document.write("<td></td>");
+                }
+            }
+            document.write("</table>");
+     })
+   </script>
 </body>
 </html>
